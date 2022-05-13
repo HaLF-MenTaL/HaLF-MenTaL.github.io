@@ -80,7 +80,7 @@
 
 .row .column>div {
     margin-top: 8px;
-
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -110,9 +110,6 @@
 .modal>img {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 100%;
-
     position: absolute;
     top: 50%;
     left: 50%;
