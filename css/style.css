@@ -308,6 +308,7 @@ footer img {
 
 .footer-container .footer-icons .icon-cont img {
     filter: invert();
+    -webkit-filter: invert;
 }
 
 /* Footer Styling End */

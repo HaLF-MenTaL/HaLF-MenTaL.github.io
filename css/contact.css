@@ -126,6 +126,7 @@ section.contact {
 .contact .icons-container .icons img {
     width: 25px;
     filter: invert();
+    -webkit-filter: invert();
 }
 
 .contact .icons-container .icons h3 {

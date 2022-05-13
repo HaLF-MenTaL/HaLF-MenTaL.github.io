@@ -29,9 +29,10 @@ section.why-us-landing>div {
     z-index: -10;
 
     background: url("../assets/pexels-fauxels-3184637.jpg");
-    filter: brightness(0.9);
     background-position: center;
     background-size: cover;
+    filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
 }
 
 .why-us-landing .text-cont {

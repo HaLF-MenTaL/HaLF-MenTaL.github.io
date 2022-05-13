@@ -38,6 +38,7 @@ section {
     background-position: center;
     background-size: cover;
     filter: grayscale(1) brightness(0.5);
+    -webkit-filter: grayscale(1) brightness(0.5);
 }
 
 .home-landing h1,
