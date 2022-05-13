@@ -1,0 +1,164 @@
+.nav-links-cont .nav-link::after,
+.nav-links-cont .nav-link::before {
+    background: var(--color-11);
+}
+
+.nav-links-cont .nav-link {
+    color: var(--color-11);
+}
+
+section.why-us-landing {
+    height: 650px;
+    position: relative;
+    background: transparent;
+}
+
+section.why-us-landing>div {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.why-us-landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+
+    background: url("../assets/pexels-fauxels-3184637.jpg");
+    filter: brightness(0.9);
+    background-position: center;
+    background-size: cover;
+}
+
+.why-us-landing .text-cont {
+    color: var(--color-11);
+    font-family: var(--font-1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.why-us-landing a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--color-11);
+    background: transparent;
+    font-size: 1.2rem;
+    font-family: var(--font-1);
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 2px solid var(--color-11);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.why-us-landing a.btn:hover {
+    background: var(--color-11);
+    color: var(--color-4);
+}
+
+section.imp-of-edu {
+    background: var(--color-2);
+    padding: 100px 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imp-of-edu h1 {
+    text-align: center;
+    font-family: var(--font-3);
+}
+
+section.imp-of-edu>h1 {
+    font-size: 3rem;
+    color: var(--color-10);
+    padding: 5px 25px;
+    border: 2px solid var(--color-10);
+    margin-bottom: 60px;
+}
+
+section.imp-of-edu>div h1 {
+    color: var(--color-4);
+    font-size: 2rem;
+    padding: 0 5%;
+}
+
+section.imp-of-edu>div p {
+    font-family: var(--font-1);
+    text-align: justify;
+    color: var(--color-7);
+    padding: 15px 5%;
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+.imp-of-edu>div.aspects p {
+    margin-bottom: 0;
+}
+
+.imp-of-edu ul li {
+    color: var(--color-7);
+    font-family: var(--font-1);
+    padding: 10px 10%;
+}
+
+.imp-of-edu ul li>span {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width:850px) {
+    section.why-us-landing>div {
+        top: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .why-us-landing .text-cont {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .why-us-landing .text-cont {
+        font-size: 2.6rem;
+    }
+
+    .why-us-landing a.btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .why-us-landing .text-cont {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    section.imp-of-edu>div h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    section.imp-of-edu>h1 {
+        font-size: 2.5rem;
+    }
+
+    section.imp-of-edu>div p {
+        font-size: 0.9rem;
+    }
+}

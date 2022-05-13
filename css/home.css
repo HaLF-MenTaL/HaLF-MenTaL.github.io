@@ -1,0 +1,385 @@
+.nav-links-cont .nav-link {
+    color: var(--color-3);
+}
+
+.nav-links-cont .nav-link::after,
+.nav-links-cont .nav-link::before {
+    background: var(--color-3);
+}
+
+section {
+    background: var(--color-2);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* First Section Styling Start */
+.home-landing {
+    height: 650px;
+    padding-top: 100px;
+    position: relative;
+    background: transparent;
+}
+
+.home-landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background: url("../assets/pexels-ariel-castillo-3563697.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(1) brightness(0.5);
+}
+
+.home-landing h1,
+.our-mission h1,
+.back2school h1,
+.imp-of-edu h1 {
+    text-align: center;
+    font-family: var(--font-3);
+}
+
+section.home-landing .title {
+    width: 100%;
+}
+
+section.home-landing h1 {
+    color: var(--color-3);
+}
+
+.home-landing h1:first-child {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--color-1);
+    padding: 0px 3%;
+}
+
+.home-landing h1:last-child {
+    font-size: 1.8rem;
+}
+
+section.home-landing p {
+    text-align: center;
+    padding: 50px 80px;
+    font-size: 1rem;
+    color: var(--color-3);
+    font-family: var(--font-1);
+}
+
+/* First Section Styling End */
+
+/* Section Section Styling Start */
+section.our-mission {
+    height: 550px;
+    padding: 8%;
+    font-weight: bold;
+
+    gap: 5%;
+}
+
+section.our-mission h1,
+section.imp-of-edu>h1 {
+    font-size: 3rem;
+    color: var(--color-10);
+    padding: 5px 25px;
+    border: 2px solid var(--color-10);
+}
+
+section.our-mission ul {
+    padding-inline-start: 40px;
+}
+
+section.our-mission ul li {
+    color: var(--color-7);
+    font-family: var(--font-1);
+    padding: 10px 30px;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Second Section Styling End */
+
+
+/* Third Section Styling Start */
+section.back2school {
+    height: 550px;
+    background: transparent;
+    position: relative;
+}
+
+.back2school::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+
+    background: url("../assets/pexels-norma-mortenson-8456138.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.back2school h1:first-child {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--color-10);
+}
+
+.back2school h1:nth-child(2) {
+    font-size: 2.5rem;
+    color: var(--color-7);
+    text-transform: capitalize;
+}
+
+.back2school p {
+    font-family: var(--font-1);
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-4);
+    padding: 4rem 10rem;
+}
+
+/* Third Section Styling End */
+
+
+/* Fourth Section Styling Start */
+section.imp-of-edu {
+    width: 100%;
+    background: var(--color-2);
+    padding: 100px 0;
+    position: relative;
+}
+
+section.imp-of-edu::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 39%, rgba(240, 243, 255, 1) 80%);
+}
+
+section.imp-of-edu>h1 {
+    margin-bottom: 5%;
+}
+
+section.imp-of-edu>div h1 {
+    color: var(--color-4);
+    font-size: 2rem;
+}
+
+section.imp-of-edu>div p {
+    font-family: var(--font-1);
+    text-align: justify;
+    color: var(--color-7);
+    padding: 15px 5%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+}
+
+/* Fourth Section Styling End */
+
+
+/* Styling Button For Apply And Read */
+a.btn {
+    text-decoration: none;
+    color: var(--color-4);
+    background: transparent;
+    font-size: 1.2rem;
+    font-family: var(--font-1);
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 2px solid var(--color-4);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+
+    z-index: 10;
+}
+
+a.btn:hover {
+    background: var(--color-4);
+    color: var(--color-3);
+}
+
+
+@media screen and (max-width:1000px) {
+    section.our-mission ul li {
+        font-size: 1.1rem;
+    }
+
+    section.our-mission h1,
+    section.imp-of-edu>h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    section.our-mission ul li {
+        font-size: 1rem;
+    }
+
+    .back2school p {
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    section.home-landing p {
+        padding: 50px;
+    }
+
+    .back2school h1:first-child {
+        font-size: 3rem;
+    }
+
+    .back2school h1:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .back2school p {
+        font-size: 1.1rem;
+    }
+
+    section.imp-of-edu {
+        padding: 70px 0;
+    }
+
+    section.imp-of-edu>div h1 {
+        font-size: 1.8rem;
+    }
+
+    section.imp-of-edu>div p {
+        font-size: 0.9rem;
+    }
+
+    section.imp-of-edu>div h1 {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .home-landing h1:first-child {
+        font-size: 2rem;
+    }
+
+    .home-landing h1:last-child {
+        font-size: 1.6rem;
+    }
+
+    section.home-landing p {
+        font-size: 0.9rem;
+        padding: 50px 40px;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    section.our-mission h1,
+    section.imp-of-edu>h1 {
+        font-size: 2rem;
+    }
+
+    section.our-mission ul {
+        padding-inline-start: 20px;
+    }
+
+    section.our-mission ul li {
+        font-size: 0.9rem;
+    }
+
+    .back2school h1:first-child {
+        font-size: 2.6rem;
+    }
+
+    .back2school h1:nth-child(2) {
+        font-size: 1.8rem;
+    }
+
+    .back2school p {
+        padding: 4rem 2rem;
+        font-size: 1rem;
+    }
+
+    section.imp-of-edu>div h1 {
+        font-size: 1.6rem;
+    }
+
+    section.imp-of-edu>div p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .home-landing h1:first-child {
+        font-size: 1.7rem;
+    }
+
+    .home-landing h1:last-child {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    section.our-mission {
+        padding: 8% 2%;
+    }
+
+    section.our-mission ul li {
+        padding: 10px 8px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    section.our-mission h1,
+    section.imp-of-edu>h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .home-landing h1:first-child {
+        font-size: 1.5rem;
+    }
+
+    .home-landing h1:last-child {
+        font-size: 1.1rem;
+    }
+
+    section.home-landing p {
+        padding: 50px 20px;
+    }
+
+    .back2school h1:first-child {
+        font-size: 2rem;
+    }
+
+    .back2school h1:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    section.imp-of-edu>h1 {
+        font-size: 1.8rem;
+    }
+
+    section.imp-of-edu>div h1 {
+        font-size: 1.4rem;
+    }
+}

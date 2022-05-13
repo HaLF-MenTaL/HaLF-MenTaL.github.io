@@ -1,0 +1,221 @@
+header {
+    z-index: 10;
+}
+
+.nav-links-cont .nav-link {
+    color: var(--color-3);
+}
+
+.nav-links-cont .nav-link::after,
+.nav-links-cont .nav-link::before {
+    background: var(--color-3);
+}
+
+/* First Section Styling Start */
+.contact-landing {
+    width: 100%;
+    height: 650px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+
+    background: url("../assets/three-black-handset-toys.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-landing::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+
+    background: var(--color-5);
+
+    opacity: 0.5;
+}
+
+.contact-landing .text-cont {
+    font-family: var(--font-3);
+    text-align: center;
+}
+
+.contact-landing h1,
+.contact-landing p {
+    padding: 0 5%;
+}
+
+.contact-landing h1 {
+    font-size: 3rem;
+    color: var(--color-3);
+}
+
+.contact-landing p {
+    font-size: 1.3rem;
+    color: var(--color-2);
+}
+
+/* First Section Styling End */
+
+
+/* Second Section Styling Start */
+section.contact {
+    padding: 5rem 10%;
+}
+
+.heading {
+    text-align: center;
+    font-family: var(--font-1);
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--color-5);
+}
+
+.contact .icons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .icons-container .icons {
+    width: 260px;
+    height: 250px;
+    padding: 2rem 1rem;
+    border: 0.1rem solid var(--color-4);
+    background: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-1);
+}
+
+.contact .icons-container .icons>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .icons-container .icons span {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: var(--color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .icons-container .icons img {
+    width: 25px;
+    filter: invert();
+}
+
+.contact .icons-container .icons h3 {
+    font-size: 1.2rem;
+    color: var(--color-4);
+    padding: .5rem 0;
+}
+
+.contact .icons-container .icons a,
+.contact .icons-container .icons p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-9);
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact .icons-container .icons p:first-child {
+    margin-top: 20px;
+}
+
+/* Second Section Styling End */
+
+
+@media screen and (max-width:850px) {
+    .contact-landing h1 {
+        font-size: 2.6rem;
+    }
+
+    .contact-landing p {
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .contact-landing p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .contact-landing h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact-landing p {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 2.9rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .contact-landing h1 {
+        font-size: 2rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .contact-landing h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-landing p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .contact-landing h1 {
+        font-size: 1.7rem;
+        padding: 0 3%;
+    }
+
+    .contact .icons-container .icons {
+        padding: 2rem 0;
+    }
+
+    .contact .icons-container .icons a,
+    .contact .icons-container .icons p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/admission.css" />
+  <link rel="stylesheet" href="./css/burger.css">
+  <link rel="stylesheet" href="./css/page-loader.css">
+  <title>Admissions</title>
+</head>
+
+<body>
+  <div id="pageloader">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+  <!-- header starts here -->
+  <header>
+    <nav id="nav-bar">
+      <div class="logo">
+        <img id="logo-break" src="./assets/logo_paper_break.png" alt="logo-break" />
+        <img id="logo" src="./assets/logo.png" alt="logo" />
+        <div class="title">
+          <span>Hafizabad</span> <br> <span>Grammar</span> <br> <span>School</span>
+        </div>
+      </div>
+      <ul class="nav-links-cont">
+        <li>
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="./why-us.html">Why Us?</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="./gallery.html">Gallery</a>
+        </li>
+
+        <li>
+          <a class="nav-link active" href="./admission.html">Admission</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  <!-- header ends here -->
+
+  <section class="admissions-open">
+    <div class="text-cont">
+      <h1>ADMISSIONS<br />OPEN</h1>
+      <a class="btn" href="#registration-form">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- admission form start here -->
+  <div id="registration-form" class="form-container">
+    <h1>Fill Registration Form</h1>
+    <form action="#">
+      <h3>Student Details:</h3>
+      <div class="student-details">
+        <div>
+          <div class="input-group">
+            <input class="text-box" name="std-first-name" type="text" required />
+            <label for="std-first-name">First Name</label>
+          </div>
+
+          <div class="input-group">
+            <input class="text-box" name="std-last-name" type="text" required />
+            <label for="std-last-name">Last Name</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="input-group">
+            <input class="text-box" name="std-Address" type="text" required />
+            <label for="std-address">Address</label>
+          </div>
+
+          <div class="input-group">
+            <input class="text-box" name="contact-no" type="text" required />
+            <label for="contact-no">Contact No.</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="input-group">
+            <input class="text-box" name="std-b-form-cnic-no" type="text" required />
+            <label for="std-b-form-cnic-no">B-Form/CNIC No.</label>
+          </div>
+
+          <div class="b-form-cnic">
+            <h3>Add B-Form/CNIC Image</h3>
+            <div class="sub-cont">
+              <input type="file" name="std-b-form-cnic-img" id="std-b-form-cnic-img" accept="image/*">
+              <label for="std-b-form-cnic-img">
+                <img src="./assets/icons/add-image.png" alt="add-image">
+                Choose a Photo</label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="age">
+            <h3>Select Age:</h3>
+            <div class="sub-cont">
+              <label for="std-age"></label>
+              <input type="date" name="std-age" required />
+            </div>
+          </div>
+
+          <div class="gender">
+            <h3>Select Gender</h3>
+            <div class="sub-cont">
+              <label class="radio" for="male">
+                <input class="radio-btn" type="radio" name="gender" id="male" value="male" checked />
+                <span>Male</span>
+              </label>
+
+              <label class="radio" for="female">
+                <input class="radio-btn" type="radio" name="gender" id="female" value="female" />
+                <span>Female</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Parents/Guardian Details:</h3>
+      <div class="guardian-details">
+        <div>
+          <div class="input-group">
+            <input class="text-box" name="guard-first-name" type="text" required />
+            <label for="guard-first-name">First Name</label>
+          </div>
+
+          <div class="input-group">
+            <input class="text-box" name="guard-last-name" type="text" required />
+            <label for="guard-last-name">Last Name</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="input-group">
+            <input class="text-box" name="guard-b-form-cnic-no" type="text" required />
+            <label for="guard-b-form-cnic-no">B-Form/CNIC No.</label>
+          </div>
+
+          <div class="b-form-cnic">
+            <h3>Add B-Form/CNIC Image</h3>
+            <div class="sub-cont">
+              <input type="file" name="guard-b-form-cnic-img" id="guard-b-form-cnic-img" accept="image/*">
+              <label for="guard-b-form-cnic-img">
+                <img src="./assets/icons/add-image.png" alt="add-image">
+                Choose a Photo</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Admission Required For:</h3>
+      <div class="adm-reqd-for">
+        <div class="box">
+          <h3>Pre School</h3>
+          <div class="pre-school c-group">
+            <label class="radio" for="nursery">
+              <input class="radio-btn" type="radio" name="class" id="nursery" value="nursery" checked />
+              <span>Nursery</span>
+            </label>
+            <label class="radio" for="prep">
+              <input class="radio-btn" type="radio" name="class" id="prep" value="prep" />
+              <span>Prep</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Primary</h3>
+          <div class="primary c-group">
+            <label class="radio" for="class-1">
+              <input class="radio-btn" type="radio" name="class" id="class-1" value="class-1" />
+              <span>Class-I</span>
+            </label>
+            <label class="radio" for="class-2">
+              <input class="radio-btn" type="radio" name="class" id="class-2" value="class-2" />
+              <span>Class-II</span>
+            </label>
+            <label class="radio" for="class-3">
+              <input class="radio-btn" type="radio" name="class" id="class-3" value="class-3" />
+              <span>Class-III</span>
+            </label>
+            <label class="radio" for="class-4">
+              <input class="radio-btn" type="radio" name="class" id="class-4" value="class-4" />
+              <span>Class-IV</span>
+            </label>
+            <label class="radio" for="class-5">
+              <input class="radio-btn" type="radio" name="class" id="class-5" value="class-5" />
+              <span>Class-V</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Elementary</h3>
+          <div class="elementary c-group">
+            <label class="radio" for="class-6">
+              <input class="radio-btn" type="radio" name="class" id="class-6" value="class-6" />
+              <span>Class-VI</span>
+            </label>
+            <label class="radio" for="class-7">
+              <input class="radio-btn" type="radio" name="class" id="class-7" value="class-7" />
+              <span>Class-VII</span>
+            </label>
+            <label class="radio" for="class-8">
+              <input class="radio-btn" type="radio" name="class" id="class-8" value="class-8" />
+              <span>Class-VIII</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Secondary</h3>
+          <div class="secondary c-group">
+            <label class="radio" for="class-9">
+              <input class="radio-btn" type="radio" name="class" id="class-9" value="class-9" />
+              <span>Class-IX</span>
+            </label>
+            <label class="radio" for="class-10">
+              <input class="radio-btn" type="radio" name="class" id="class-10" value="class-10" />
+              <span>Class-X</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit"><span>Let Me In</span></button>
+    </form>
+  </div>
+
+  <!-- footer starts here -->
+  <footer class="footer-container">
+    <div class="footer-left">
+      <div class="title">
+        <h3>Hafizabad</h3>
+        <h3>Grammar School</h3>
+        <p>Revolution Through Education</p>
+      </div>
+      <p class="footer-links">
+        <a href="./index.html">Home</a>
+        ·
+        <a href="./why-us.html">Why Us?</a>
+        ·
+        <a href="./gallery.html">Gallery</a>
+        ·
+        <a href="./admission.html">Admission</a>
+        ·
+        <a href="./contact.html">Contact</a>
+      </p>
+
+      <p class="footer-company-name">All Rights Reserved © 2022</p>
+    </div>
+
+    <div class="footer-center">
+      <div class="box">
+        <div class="icon-cont">
+          <img src="./assets/icons/pin-outline.png" alt="image" />
+        </div>
+        <p><span>House#1 Defence Road</span>Hafizabad, Pakistan</p>
+      </div>
+
+      <div class="box">
+        <div class="icon-cont">
+          <img src="./assets/icons/phone-outline.png" alt="image" />
+        </div>
+        <p><a href="tel:+92-303-6058323">+92-303-6058323</a></p>
+      </div>
+
+      <div class="box">
+        <div class="icon-cont">
+          <img src="./assets/icons/email-outline.png" alt="image" />
+        </div>
+        <p>
+          <a href="mailto:principalhgs001@gmail.com">principalhgs001@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Our Mission</span>
+        A basic foundation of knowledge being imparted to a child. A chance
+        for children to acquire knowledge on various fields of education.
+      </p>
+
+      <div class="footer-icons">
+        <a class="icon-cont" href="https://www.facebook.com/HafizabadGrammarsch"><img
+            src="./assets/icons/facebook-filled.png" alt="image" /></a>
+        <a class="icon-cont" href="https://wa.me/923036058323"><img src="./assets/icons/whatsapp-filled.png"
+            alt="image" /></a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/page_loader.js"></script>
+</body>
+
+</html>
