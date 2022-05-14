@@ -1,3 +1,4 @@
+const navBar = document.querySelector("#nav-bar");
 const hamburger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-links-cont");
 const navLink = document.querySelectorAll(".nav-link");
@@ -14,3 +15,14 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+//NavBar Changing on Scroll
+const header = document.querySelector("#header");
+window.onscroll = () => {
+    if (window.scrollY >= 75) {
+        navBar.classList.add("active");
+    } else {
+        navBar.classList.remove("active");
+    }
+};

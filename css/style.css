@@ -144,6 +144,65 @@ header {
     color: var(--color-1);
 }
 
+
+/* Nav-Bar After Scroll */
+#nav-bar.active {
+    position: fixed;
+    background: rgba(41, 44, 47, 0.78);
+    animation: fade 0.7s;
+    -webkit-animation: fade 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#nav-bar.active .logo .title {
+    display: block;
+}
+
+#nav-bar.active .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#nav-bar.active #logo-break {
+    display: none;
+}
+
+#nav-bar.active #logo {
+    position: static;
+    width: 65px;
+}
+
+#nav-bar.active .nav-links-cont .nav-link::after,
+#nav-bar.active .nav-links-cont .nav-link::before {
+    background: var(--color-3);
+}
+
+#nav-bar.active .nav-links-cont .nav-link {
+    color: var(--color-3);
+}
+
+/* Nav-Bar After Scroll Styling End */
+
 /* Nav-Bar Styling End */
 
 
