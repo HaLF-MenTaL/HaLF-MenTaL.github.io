@@ -19,10 +19,12 @@ function closeMenu() {
 
 //NavBar Changing on Scroll
 const header = document.querySelector("#header");
-window.onscroll = () => {
-    if (window.scrollY >= 75) {
-        navBar.classList.add("active");
-    } else {
-        navBar.classList.remove("active");
+if (window.innerWidth > 850) {
+    window.onscroll = () => {
+        if (window.scrollY >= 75) {
+            navBar.classList.add("active");
+        } else {
+            navBar.classList.remove("active");
+        }
     }
 };
