@@ -55,6 +55,11 @@
         -webkit-transition: 0.3s;
     }
 
+    .nav-links-cont .nav-link::after,
+    .nav-links-cont .nav-link::before {
+        background: var(--color-9);
+    }
+
     .nav-links-cont.active .nav-link {
         color: var(--color-9);
     }
